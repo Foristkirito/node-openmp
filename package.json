@@ -1,0 +1,14 @@
+{
+  "name": "node-openmp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --watch src -e js,cc --exec \"yarn build && cls && yar run\" ",
+    "build": "node-gyp configure build",
+    "dev": "node --no-warnings src/index.js"
+  },
+  "dependencies": {
+    "node-addon-api": "^1.2.0"
+  }
+}
